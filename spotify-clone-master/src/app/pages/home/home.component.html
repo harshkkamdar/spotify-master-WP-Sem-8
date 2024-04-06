@@ -1,0 +1,31 @@
+<div class="spotify_home-container">
+        <div [style.paddingTop]="'48px'" class="mt-5 container-fluid">
+            <h4 [style.color]="'white'" [style.padding]="'10px'">New Relese</h4>
+            <div class="playlist_card_collection">
+                <div id="song_card_items" *ngFor="let sc of songCards1"> 
+                    <app-song-card
+                        playlistThumbnail= {{sc.thumbnail}}
+                        title={{sc.title}}
+                        description={{sc.description}}
+                        id={{sc.song_id}}
+                    ></app-song-card>
+                </div>
+            </div>
+        </div>
+        <div [style.paddingTop] = "'250px'" class="mt-5 container-fluid">
+            <h4 [style.color]="'white'" [style.padding]="'10px'">
+                Spotify Playlist
+            </h4>
+        <div class="playlist_card_collection">
+            <div id="song_card_items" *ngFor="let sc of songCards2"> 
+                <app-song-card
+                    playlistThumbnail= {{sc.thumbnail}}
+                    title={{sc.title}}
+                    description={{sc.description}}
+                    id={{sc.song_id}}
+                ></app-song-card>
+            </div>
+    </div>
+</div>
+</div>
+

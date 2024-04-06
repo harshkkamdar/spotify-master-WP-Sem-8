@@ -1,0 +1,55 @@
+<!-- signup.component.html -->
+
+<div class="signup_container">
+  <img
+    src="assets/Spotify_green.png"
+    width="200"
+    height="60"
+    style="display: block; margin: 60px auto"
+  />
+  <hr />
+  <h2>Create an Account</h2>
+  <br />
+  <div>
+    <label><strong>Email address</strong></label
+    ><br />
+    <input
+      type="text"
+      id="login_email"
+      required
+      placeholder="email address *"
+      [(ngModel)]="email"
+      class="signup-textinput input"
+    />
+  </div>
+  <div>
+    <label><strong>Password</strong></label
+    ><br />
+    <input
+      type="text"
+      id="login_pass"
+      required
+      placeholder="set password *"
+      [(ngModel)]="password"
+      class="signup-textinput1 input"
+    />
+  </div>
+  <div>
+    <label><strong>Confirm Password</strong></label
+    ><br />
+    <input
+      type="text"
+      id="login_pass"
+      required
+      placeholder="set password *"
+      [(ngModel)]="cpassword"
+      class="signup-textinput1 input"
+    /><br />
+    <h6 style="color: red; text-align:center" *ngIf="wrongpass">
+      Passwords Dont Match. <br>Please try again!
+    </h6>
+  </div>
+  <br />
+  <button class="signup_btn" (click)="signup()">SIGN UP</button>
+  <p>Already have an account? <a (click)="onNavigateToLogin()">Log In</a></p>
+</div>

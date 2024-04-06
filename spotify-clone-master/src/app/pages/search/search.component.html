@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genre Cards</title>
+    <link rel="stylesheet" href="search.component.css" />
+  </head>
+  <body>
+    <div class="card-container">
+        <input class="search_playlist" [(ngModel)]="songsearch" type="search" placeholder="What do you want to listen to ?" />
+        <button class="search-button button" (click)="search()">Search</button>
+      </div>
+      <iframe
+      width="560"
+      height="315"
+      id="videoIframe"
+      [src]="sanitizedUrl"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+      
+      <div *ngIf="searched">
+        <div *ngFor="let song of songs">
+          <div class="song-card">
+            <h3 style="color: #f1f1f1;">{{ song.title }}</h3>
+            <button class="queue-button button" (click)="addToQueue(song)">Add to Queue</button>
+            
+            <div class="select-album">
+              <button class="add-album-button button">Add to Album</button>
+              <br>
+              <div class="dropdown-content">
+                <a href="#" *ngFor="let album of albums" (click)="addToAlbum(song, album, $event)">{{ album.name }}</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </body>
+</html>

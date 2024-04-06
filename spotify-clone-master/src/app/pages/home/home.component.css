@@ -1,0 +1,29 @@
+
+
+.spotify_home-container_playlist-container{
+    background-color: hsl(0, 0%, 10%);
+    height: 80vh;
+    padding: 0px;
+    overflow-y: auto;
+    padding-left: 0px;
+}
+
+.playlist_card_collection{
+    display: flex;
+    gap: 20px;
+    max-width: 1500px;
+    overflow-x: auto;
+    height: 80vh;
+    position: absolute;
+}
+
+.song_card_items{
+    min-width: 185px;
+    overflow: revert-layer;
+}
+
+
+.spotify_home-container{
+    height:8vh;
+
+}

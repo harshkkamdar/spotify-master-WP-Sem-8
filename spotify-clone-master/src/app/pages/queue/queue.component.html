@@ -1,0 +1,13 @@
+<div class="queue-container">
+    <iframe width="560" height="315" id="videoIframe" [src]="sanitizedUrl" frameborder="0" allowfullscreen></iframe>
+    <div class="queue-list">
+      <h3>Current Queue</h3>
+      <ul>
+        <li *ngFor="let item of queueItems" style="padding: 15px;">
+          {{ item.name }}
+          <button class="play-button" (click)="playItem(item)">Play</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

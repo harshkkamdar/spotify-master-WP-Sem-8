@@ -1,0 +1,16 @@
+<body>
+    <div class="spotify_home-container_side-bar">
+        <div class="spotify_home-container_side-bar-items" [style.margin-top]="'100px'">
+            <a routerLink="home">Home</a>
+        </div>
+        <div class="spotify_home-container_side-bar-items" (click)="onNavigation('search')">
+            <a routerLink="search">Search</a>
+        </div>
+        <div class="spotify_home-container_side-bar-items" (click)="onNavigation('library')">
+            <a routerLink="library">Your Library</a>
+        </div>
+        <div class="spotify_home-container_side-bar-items" (click)="onNavigation('queue')">
+            <a routerLink="queue">Queue</a>
+        </div>
+</div>
+</body>

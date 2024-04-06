@@ -1,0 +1,18 @@
+<div class="album-container">
+    <div *ngFor="let album of albums" class="album-card">
+      <h3>{{ album.name }}</h3>
+      <p>{{ album.songs.length }} songs</p>
+      <ul>
+        <li *ngFor="let song of album.songs">
+          <div class="song-details">
+              <button class="add-to-queue" (click)="addToQueue(song)">+</button>
+              <button class="remove-from-album" (click)="removeFromAlbum(song, album)">x</button>
+              
+            <p style="padding-left: 5px;">{{ song.title }}</p>
+          </div>
+        </li>
+      </ul>
+      <button class="set-as-queue" (click)="setAsQueue(album)">Set as Queue</button>
+    </div>
+  </div>
+  

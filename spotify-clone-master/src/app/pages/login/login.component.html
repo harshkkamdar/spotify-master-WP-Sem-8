@@ -1,0 +1,48 @@
+<!-- login.component.html -->
+
+<div class="login_container">
+  <img
+    src="assets/Spotify_green.png"
+    width="200"
+    height="60"
+    style="display: block; margin: 60px auto"
+  />
+  <hr />
+  <h2>Login to Your Account</h2>
+  <br />
+  <div>
+    <label><strong>Email address</strong></label
+    ><br />
+    <input
+      type="text"
+      id="login_email"
+      required
+      placeholder="email address *"
+      [(ngModel)]="name"
+      class="login-textinput input"
+    />
+  </div>
+  <div>
+    <label><strong>Password</strong></label
+    ><br />
+    <input
+      type="text"
+      id="login_pass"
+      required
+      placeholder="password *"
+      [(ngModel)]="password"
+      class="login-textinput1 input"
+    />
+  </div>
+  <h6 style="color: red; text-align:center" *ngIf="wrongpass">
+    Wrong Unsername/Password. <br>Please try again!
+  </h6>
+
+  <div class="login-options">
+    <button class="login_btn" (click)="submit()">LOGIN</button>
+  </div>
+  <div class="pass">
+    <a class="forgot-password">Forgot Password?</a>
+    <p>Don't have an account? <a (click)="onNavigateToReg()">Sign Up</a></p>
+  </div>
+</div>

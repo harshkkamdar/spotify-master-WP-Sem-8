@@ -1,0 +1,221 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    background-color: #191919;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 155px;
+}
+
+.card {
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    height: 190px;
+    margin: 12px;
+}
+
+.rock {
+    background-color: red; /* Red */
+}
+
+.pop {
+    background-color: yellow; /* Green */
+}
+
+.jazz {
+    background-color: rgb(146, 146, 146); /* Blue */
+}
+
+.blues {
+    background-color: purple; /* Purple */
+}
+
+.hip-hop {
+    background-color: #ff7700; /* Orange */
+}
+
+.country {
+    background-color: #cc2eb2; /* Emerald */
+}
+
+.electronic {
+    background-color: #0099ff; /* Blue */
+}
+
+.reggae {
+    background-color: #ff1900; /* Alizarin */
+}
+
+.rnb {
+    background-color: #ff9d00; /* Orange */
+}
+
+.classical {
+    background-color: #5dfe00; /* Midnight Blue */
+}
+.spotify_top_nav{
+    width: 100%;
+    height: 76px;
+    background: #0f0f0f;
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: lightgray;
+    font-weight: bold;
+    font-size: 18px;
+} 
+
+.spotify_top_nav_focus-auth {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 800px;
+}
+
+.spotify_top_nav_focus-auth_login {
+    background-color: white;
+    padding: 17px;
+    border-radius: 40px;
+    color: black;
+    font-weight: bold;
+    width: 110px;
+    text-align: center;
+
+}
+
+.spotify_top_nav_focus-title{
+    flex-basis: 753px;
+     font-size: 22px;
+     cursor: pointer;
+}
+
+
+.spotify_top_nav_focus-auth_login:hover{
+    color: rgb(19, 176, 19);
+    cursor: pointer;
+    background-color: rgb(67, 67, 68);
+}
+
+.spotify_top_nav_focus-auth_sign-up{
+    
+    cursor: pointer;
+    
+}
+
+input.search_playlist{
+    border: none;
+    width: 350px;
+    border-radius: 20px;
+    height: 40px;
+    padding: 14px;
+    font-size: 14px;
+    margin-left: 19px;
+}
+
+input.search_playlist::placeholder{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: rgb(173, 173, 173);
+}
+.card-container {
+    margin-bottom: 20px;
+  }
+  
+  .search_playlist {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .song-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .queue-button,
+  .add-album-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+/* Style the dropdown button */
+.select-album button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown container */
+  .select-album {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown content */
+  .select-album .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the dropdown links */
+  .select-album .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .select-album .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown menu */
+  .select-album:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .select-album:hover button {
+    background-color: #3e8e41;
+  }
+  
+  

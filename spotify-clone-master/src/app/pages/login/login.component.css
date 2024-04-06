@@ -1,0 +1,62 @@
+/* login.component.css */
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login_container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid rgb(129, 129, 129);
+  width: 100%;
+  margin-bottom: 19px;
+  box-sizing: border-box;
+}
+
+.forgot-password {
+  color: rgb(53, 175, 77);
+  text-decoration: none;
+}
+
+.login_btn {
+  background-color: white;
+  color: black;
+  padding: 14px;
+  border-radius: 28px;
+  border: 1px solid lightgreen;
+  font-weight: bold;
+  width: 30%;
+  margin: 10px;
+  width: 400px;
+}
+
+.login_container p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login_container a {
+  color: rgb(53, 175, 77);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.pass{
+  text-align: center;
+}
+
+.chbx{
+  text-align: left;
+}
